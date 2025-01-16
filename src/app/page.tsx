@@ -1,9 +1,15 @@
 /** @format */
 "use client";
-import ConnectWallet from "@/components/connectWallet";
+import Navbar from "@/components/navbar";
+import Profile from "@/components/profile";
 import { useAppKit } from "@/config/config";
 
 export default function App() {
   useAppKit();
-  return <ConnectWallet />;
+  return (
+    <>
+      <Navbar />
+      <Profile />
+    </>
+  );
 }

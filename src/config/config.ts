@@ -8,6 +8,8 @@ import {
     SolflareWalletAdapter,
 } from '@solana/wallet-adapter-wallets'
 import { solana, solanaTestnet, solanaDevnet } from '@reown/appkit/networks'
+import { useWalletInfo } from '@reown/appkit/react'
+
 
 
 export const projectId = `${process.env.NEXT_PUBLIC_PROJECT_ID}` // this is a public projectId only to use on localhost
@@ -39,4 +41,5 @@ const modal = createAppKit({
 export {
     modal,
     useAppKit,
+    useWalletInfo,
 }

@@ -9,13 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.1",
     "@reown/appkit": "^1.6.4",
     "@reown/appkit-adapter-solana": "^1.6.4",
     "@reown/appkit-wallet-button": "^1.6.4",
     "@solana/wallet-adapter-wallets": "^0.19.32",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.471.1",
     "next": "15.1.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
