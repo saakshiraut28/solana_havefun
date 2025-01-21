@@ -1,8 +1,11 @@
 import {
     createAppKit,
     useAppKit,
+    useAppKitProvider,
+    useAppKitAccount
 } from '@reown/appkit/react'
 import { SolanaAdapter } from '@reown/appkit-adapter-solana/react'
+import { useAppKitConnection, type Provider } from '@reown/appkit-adapter-solana/react'
 import {
     PhantomWalletAdapter,
     SolflareWalletAdapter,
@@ -10,10 +13,7 @@ import {
 import { solana, solanaTestnet, solanaDevnet } from '@reown/appkit/networks'
 import { useWalletInfo } from '@reown/appkit/react'
 
-
-
 export const projectId = `${process.env.NEXT_PUBLIC_PROJECT_ID}` // this is a public projectId only to use on localhost
-
 // Setup solana adapter
 const solanaAdapter = new SolanaAdapter({
     wallets: [
