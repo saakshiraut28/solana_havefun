@@ -66,9 +66,8 @@ const MessageCard = ({ message }: MessageCardProps): React.ReactElement => {
     try {
       setIsLiking(true);
 
-      const PROGRAM_ID = new PublicKey(
-        "3C98PcyQy1QGfNyYVakfVP4Xeba4fFg5tW7KBADSyjnP"
-      );
+      const PROGRAM_ID = new PublicKey(`${process.env.NEXT_PUBLIC_PROGRAM_ID}`);
+
       const creatorPubkey = new PublicKey(message.authorPublicKey);
 
       const [creatorStatsKey] = PublicKey.findProgramAddressSync(
